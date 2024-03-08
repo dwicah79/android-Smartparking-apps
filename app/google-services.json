@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "127637825157",
+    "project_id": "tafaizpmob",
+    "storage_bucket": "tafaizpmob.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127637825157:android:e9e0145eec3f83d55babec",
+        "android_client_info": {
+          "package_name": "com.example.faiz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJDMqhWaV1eeIsN5vU3IEDEvjVKs1lfSU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

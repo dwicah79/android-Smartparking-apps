@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:orientation="vertical"
+            android:columnOrderPreserved="true"
+            android:rowCount="2">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/hi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:padding="5dp"
+                        android:text="HI,"
+                        android:textSize="30dp" />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/username"
+                        android:layout_toRightOf="@+id/hi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:padding="5dp"
+                        android:text="username"
+                        android:textSize="30dp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_toRightOf="@+id/username"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:padding="5dp"
+                        android:src="@drawable/baseline_waving_hand_24" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="100dp"
+                        android:id="@+id/gambaruser"
+                        android:layout_marginLeft="50dp"
+                        android:padding="5dp"
+                        android:src="@drawable/user" />
+                    <ImageButton
+                        android:id="@+id/keluar"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_logout_24"
+                        android:layout_below="@+id/gambaruser"
+                        android:layout_alignParentRight="true" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mudahnya Mencari Parkir"
+                        android:layout_below="@+id/hi"
+                        android:padding="5dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/grey"/>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="false">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Popular Parking Area"
+                        android:textSize="20dp"
+                        android:padding="10dp"
+                        android:fontFamily="sans-serif-black"/>
+                    <ImageView
+                        android:id="@+id/place"
+                        android:layout_width="30dp"
+                        android:padding="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/baseline_place_24"
+                        android:layout_below="@+id/area"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yogyakarta"
+                        android:padding="5dp"
+                        android:layout_toRightOf="@+id/place"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/area"
+                        android:textColor="@color/grey"
+                        android:layout_marginBottom="30dp"/>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+
+
+
+    <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/malioboro"
+                android:layout_width="300dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:background="@drawable/backgorundd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/route1"
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/outline"
+                        android:backgroundTint="@color/item"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PARKIRAN MALIOBORO"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:id="@+id/namaparkir1"/>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_below="@+id/namaparkir1"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="12dp"
+                            android:src="@drawable/baseline_place_24"
+                            android:id="@+id/tanda1"/>
+
+                        <TextView
+                            android:id="@+id/namamalio"
+                            android:layout_below="@+id/namaparkir1"
+                            android:layout_toRightOf="@+id/tanda1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="JL.Malioboro"
+                            android:textColor="@color/white"
+                            android:layout_marginLeft="5dp"/>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/baseline_access_time_24"
+                            android:layout_below="@+id/tanda1"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/waktu1"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="08.00-21.00"
+                            android:textColor="@color/white"
+                            android:layout_below="@+id/namamalio"
+                            android:layout_toRightOf="@id/waktu1"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="5dp"/>
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:background="@drawable/backgorundd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/route2"
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/outline"
+                        android:backgroundTint="@color/item"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PARKIRAN ALKID"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:id="@+id/namaparkir2"/>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_below="@+id/namaparkir2"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="12dp"
+                            android:src="@drawable/baseline_place_24"
+                            android:id="@+id/tanda2"/>
+
+                        <TextView
+                            android:id="@+id/namaalkid"
+                            android:layout_below="@+id/namaparkir2"
+                            android:layout_toRightOf="@+id/tanda2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Patehan,Yogyakarta"
+                            android:textColor="@color/white"
+                            android:layout_marginLeft="5dp"/>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/baseline_access_time_24"
+                            android:layout_below="@+id/tanda2"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/waktu2"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="08.00-21.00"
+                            android:textColor="@color/white"
+                            android:layout_below="@+id/namaalkid"
+                            android:layout_toRightOf="@id/waktu2"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="5dp"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:background="@drawable/backgorundd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/route3"
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/outline"
+                        android:backgroundTint="@color/item"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PARKIRAN BUKIT BINTANG"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:id="@+id/namaparkir3"/>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_below="@+id/namaparkir3"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="12dp"
+                            android:src="@drawable/baseline_place_24"
+                            android:id="@+id/tanda3"/>
+
+                        <TextView
+                            android:id="@+id/namabukit"
+                            android:layout_below="@+id/namaparkir3"
+                            android:layout_toRightOf="@+id/tanda3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kec. Patuk,Yogyakarta"
+                            android:textColor="@color/white"
+                            android:layout_marginLeft="5dp"/>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/baseline_access_time_24"
+                            android:layout_below="@+id/tanda3"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/waktu3"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="08.00-21.00"
+                            android:textColor="@color/white"
+                            android:layout_below="@+id/namabukit"
+                            android:layout_toRightOf="@id/waktu3"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="5dp"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:background="@drawable/backgorundd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/route4"
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/outline"
+                        android:backgroundTint="@color/item"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:padding="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PARKIRAN BUKIT BINTANG"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:id="@+id/namaparkir4"/>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_below="@+id/namaparkir4"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="12dp"
+                            android:src="@drawable/baseline_place_24"
+                            android:id="@+id/tanda4"/>
+
+                        <TextView
+                            android:id="@+id/namaprawiro"
+                            android:layout_below="@+id/namaparkir4"
+                            android:layout_toRightOf="@+id/tanda4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mergangsan,Yogyakarta"
+                            android:textColor="@color/white"
+                            android:layout_marginLeft="5dp"/>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/baseline_access_time_24"
+                            android:layout_below="@+id/tanda4"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/waktu4"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="08.00-21.00"
+                            android:textColor="@color/white"
+                            android:layout_below="@+id/namaprawiro"
+                            android:layout_toRightOf="@id/waktu4"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="5dp"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        </HorizontalScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Telusuri Pada Maps"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+    <ImageButton
+        android:id="@+id/peta"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_map_24"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/biru"/>
+
+</LinearLayout>

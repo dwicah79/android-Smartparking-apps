@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Daftar">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/gambarku"/>
+
+        <EditText
+            android:drawablePadding="21dp"
+            android:id="@+id/namapengguna"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/outline"
+            android:layout_below="@+id/imageView2"
+            android:hint="Username"/>
+        <EditText
+            android:id="@+id/emaill"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/outline"
+            android:layout_below="@+id/namapengguna"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:drawablePadding="21dp" />
+
+        <EditText
+            android:drawablePadding="21dp"
+            android:id="@+id/passwoordmain"
+            android:layout_below="@+id/emaill"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/outline"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:layout_centerHorizontal="true"
+            android:hint="Password"/>
+        <EditText
+            android:drawablePadding="21dp"
+            android:id="@+id/passwoordsec"
+            android:layout_below="@+id/passwoordmain"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/outline"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:hint="Confirm Password"/>
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="159dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/passwoordsec"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:text="Buat Akun" />
+        <Button
+            android:id="@+id/logg"
+            android:layout_width="159dp"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:layout_below="@+id/register"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Log-In" />
+
+    </RelativeLayout>
+</ScrollView>
